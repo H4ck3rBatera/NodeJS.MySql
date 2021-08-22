@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/H4ck3rBatera/NodeJS.MySql#readme",
   "dependencies": {
+    "ejs": "^3.1.6",
     "express": "^4.17.1"
   }
 }
