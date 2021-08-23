@@ -1,16 +1,9 @@
-var express = require('express');
-var app = express();
+var app = require('./config/server');
 
-app.set('view engine', 'ejs');
+require('./app/routes/home')(app);
 
-app.get('/', function(req, res){
-    res.send("home/index");
-});
-
-app.get('/technology', function(req, res){
-    res.render("section/technology");
-});
+require('./app/routes/technology')(app);
 
 app.listen(3000, function(){
-    console.log('Init Express');
+    console.log('Start Server');
 });
