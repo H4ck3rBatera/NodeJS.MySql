@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "codezombiech.gitignore"
+        "codezombiech.gitignore",
+        "ms-azuretools.vscode-docker"
     ]
 }
