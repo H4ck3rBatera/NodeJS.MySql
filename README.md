@@ -14,5 +14,7 @@ npm install ejs --save
 
 npm install -g nodemon
 
+npm install mysql --save
+
 nodemon app
 ```
