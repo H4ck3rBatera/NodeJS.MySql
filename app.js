@@ -1,8 +1,8 @@
-var app = require('./config/server');
+const app = require('./config/server');
 
-require('./app/routes/home')(app);
+require('./app/routes/homeRoute')(app);
 
-require('./app/routes/technology')(app);
+require('./app/routes/technologyRoute')(app);
 
 app.listen(3000, function () {
     console.log('Start Server');
