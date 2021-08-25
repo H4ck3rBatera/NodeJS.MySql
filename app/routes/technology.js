@@ -1,9 +1,9 @@
+const technologies = require('../../data/technologies');
+
 module.exports = function (app) {
     app.get('/technology', async function (req, res) {
+        const listTechnologies = await technologies.listTechnologies();
 
-        const db = require('../../data/db');
-        const technologies = await db.listTechnologies();
-
-        res.send(technologies);
+        res.send(listTechnologies);
     });
 }
