@@ -2,8 +2,8 @@ const repository = require('../../data/technologyRepository');
 
 module.exports = function (app) {
     app.get('/technology', async function (req, res) {
-        const listTechnologies = await repository.listTechnologies();
+        const list = await repository.list();
 
-        res.send(listTechnologies);
+        res.render("technology/listView", { list: list });
     });
 }
